@@ -3,12 +3,14 @@ package main
 import (
 	"html/template"
 	"path/filepath"
+	"maxkavun.ml/snippetbox/pkg/forms"
 	"maxkavun.ml/snippetbox/pkg/models"
 	"time"
 )
 
 type templateData struct {
 	CurrentYear int
+	Form *forms.Form
 	Snippet *models.Snippet
 	Snippets []*models.Snippet
 }
