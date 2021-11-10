@@ -12,6 +12,7 @@ type templateData struct {
 	CurrentYear int
 	Form *forms.Form
 	Snippet *models.Snippet
+	Flash string
 	Snippets []*models.Snippet
 }
 
